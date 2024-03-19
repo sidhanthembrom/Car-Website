@@ -1,0 +1,46 @@
+.find{
+    background-color: rgba(255, 255, 255, 0.259);
+}
+
+.find-a-dealer{
+    text-align: center;
+    background-color: white;
+    color: black;
+    line-height: 5.25rem;
+    font-family: monospace;
+    font-size: x-large;
+    font-weight: 530;
+}
+
+.container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.delhi-container, .kolkata-container, .mumbai-container, .chennai-container{
+    border: 1px solid white;
+    line-height: 30px;
+    width: 100%;
+}
+
+@media (min-width: 426px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    #nav{
+        background-color: rgb(215, 4, 4);
+        color: white;
+    }
+}
+
+@media (max-width: 425px) {
+    .container{
+        display: grid;
+    }
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-navbar">
+            <a class="logo" href="index.html">
+                <img src="Dodge-Logo-Vector-scaled.jpg" alt="DODGE LOGO" height="40px">
+            </a>
+            
+            <div class="btn">
+                
+            </div>
+
+            <nav class="navbar">
+                <ul class="inner-container" data-visible="false">
+                    <li>
+                        <a class="find na" href="findAdealer.html">FIND A DEALER</a>
+                    </li>
+                    <li>
+                        <a class="shop na" href="shopOnline.html">SHOP ONLINE</a>
+                    </li>
+                    <li>
+                        <a class="build" href="build&price.html">BUILD & PRICE</a>
+                    </li>
+                    <li>
+                        <a class="login na" href="loginpage.html">SIGN IN / CREATE AN ACCOUNT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="background">
+
+            <div class="container-hero">
+                <div class="big-wallpaper">
+                    <button id="desktop-btn"><i class="fa-regular fa-circle-play"></i></button>
+                    <button id="mobile-btn"><i class="fa-regular fa-circle-play"></i></button>
+            
+                    <img class="main-wallpaper" src="main_wallpaper.avif" alt="">
+                    <img class="Mobile_Hero_Banner" src="Mobile_Hero_Banner.avif" alt="">
+
+                </div>
+                <div>    <!--video tags are always kept in a container-->
+                    <video id="desktop-video" autoplay muted loop src="desktop_Hero_video.mp4"></video>
+                    <video id="mobile-video" autoplay muted loop src="Mobile_Hero_video.mp4"></video>
+                </div>
+            </div>
+
+            <div class="srt">
+                <!-- <img src="SRT_logo.png.image.500.avif" alt="srt_logo" width="250px"> -->
+            </div>
+
+
+            <!-- white dodge starts-->
+            <div class="main_description">
+                <!-- <a class="CHALLENGER_SRT®_HELLCAT">CHALLENGER SRT® HELLCAT <br> <span style="font-size: 0.8rem; font-weight: normal;">As intimidating as it is iconic, with a Supercharged 6.2L HEMI® V8 engine to
+                    back up the hype.</span> </a> -->
+                <a class="CHALLENGER_SRT®_HELLCAT">CHALLENGER SRT® HELLCAT </a>
+                <a class="As_intimidating">As intimidating as it is iconic, with a Supercharged 6.2L HEMI® V8 engine to
+                    back up the hype.</a>
+            </div>
+
+            <div class="white_dodge">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Mobile_01.jpg">
+                    <source media="(min-width: 769px)" srcset="white_srt.avif">
+                    <img src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Mobile_01.jpg" alt="">
+                </picture>
+            </div>
+
+            <!-- white_dodge_below -->
+            <div class="carousel">
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <picture>
+                                <source class="carousel__image" media="(max-width: 768px)" srcset="animal-logo-mobile.avif">
+                                <source class="carousel__image" media="(min-width: 769px)" srcset="animal_logo.avif">
+                                <img class="carousel__image" src="animal-logo-mobile.avif" alt="">
+                            </picture>
+                            <h2 class="text">HEAR IT ROAR</h2>
+                            <p class="text">The devil’s in the details. A classic Hellcat badge on both the exterior and interior of the car honors this speed machine’s timeless legacy, and leaves onlookers eternally obsessed.</p>
+                        </li>
+                        <li class="carousel__slide">
+                            <picture>
+                                <source class="carousel__image" media="(max-width: 768px)" srcset="key-logo-mobile.avif">
+                                <source class="carousel__image" media="(min-width: 769px)" srcset="key_logo.avif">
+                                <img class="carousel__image" src="key-logo-mobile.avif" alt="">
+                            </picture>
+                            <h2 class="text">ALWAYS BET ON POWER</h2>
+                            <p class="text">For controlled outbursts, the black key fob unleashes 500 horsepower of pure acceleration. But when you’ve got to have it all, the red fob summons up all 717 horses from under the hood. No wrong answer here.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+            <!-- white dodge ends -->
+
+
+            <div class="audio">
+                <figcaption>Listen to the Engine</figcaption>
+                <audio controls src="engine-audio.mp3"></audio>
+            </div>
+            
+
+            <!-- blue dodge starts-->
+            <div class="main_description">
+                <a class="CHALLENGER_SRT®_HELLCAT_WIDEBODY">CHALLENGER SRT® HELLCAT WIDEBODY</a>
+                <a class="wider_is">
+                    Wider is always better. With its extra width and Supercharged 6.2L HEMI® SRT Hellcat V8 engine, this
+                    monster’s handling ability makes every drive an unparalleled rush.
+                </a>
+            </div>
+
+            <div class="blue_dodge">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Widebody_Mobile_01.jpg">
+                    <source media="(min-width: 769px)" srcset="blue_dodge.avif">
+                    <img src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Widebody_Mobile_01.jpg" alt="">
+                </picture>
+            </div>
+
+            <!-- blue_dodge_below-->
+            <div class="second__carousel">
+                <div class="second__carousel__track-container">
+                    <ul class="second__carousel__track">
+                        <li class="second__carousel__slide second__current-slide">
+                            <picture>
+                                <source class="second__carousel__image" media="(max-width: 768px)" srcset="tyre-side-mobile.avif">
+                                <source class="second__carousel__image" media="(min-width: 769px)" srcset="tyre_side.avif">
+                                <img class="second__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Widebody_Mobile_02.jpg.image.1000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">GO WIDE OR GO HOME</h2>
+                            <p>The fenders of the Challenger SRT® Hellcat Widebody bring 3.5 extra inches to the game, and house wider tires—meaning superior handling, better grip and a stance that scares off Sunday drivers.</p>
+                        </li>
+                        <li class="second__carousel__slide">
+                            <picture>
+                                <source class="second__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Widebody_Mobile_03.jpg.image.500.jpg">
+                                <source class="second__carousel__image" media="(min-width: 769px)" srcset="light_side.avif">
+                                <img class="second__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Widebody_Mobile_03.jpg.image.500.jpg" alt="">
+                            </picture>
+                            <h2 class="text">CATCH SOME AIR</h2>
+                            <p>Blazing light and inventive function meet as Air-Catcher® Headlamps illuminate the road while allowing air to flow into the engine.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="second__carousel__nav">
+                <button class="second__carousel__indicator second__current-slide"></button>
+                <button class="second__carousel__indicator"></button>
+            </div>
+
+            <div class="main_description">
+                <a class="CHALLENGER_SRT®_HELLCAT_REDEYE">CHALLENGER SRT® HELLCAT REDEYE</a>
+                <a class="with_its">
+                    With its Supercharged 6.2L HEMI® SRT Hellcat V8 engine offering up to 797 horsepower, it was born to
+                    leave bystanders wondering what just happened.
+                </a>
+            </div>
+            <!-- blue dodge ends -->
+
+
+            <!-- grey dodge -->
+            <div class="grey_dodge">
+                <picture>
+                    <source class="third__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Mobile_01.jpg">
+                    <source class="second__carousel__image" media="(min-width: 769px)" srcset="grey_dodge.avif">
+                    <img class="third__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Mobile_01.jpg" alt="">
+                </picture>
+            </div>
+            <!-- grey dodge ends -->
+
+            <!-- black dodge starts-->
+            <div class="main_description">
+                <a class="CHALLENGER_SRT®_HELLCAT_REDEYE_WIDEBODY">CHALLENGER SRT® HELLCAT REDEYE WIDEBODY</a>
+                <a class="even_as">
+                    Even as it reaches 60 mph in 3.6 seconds, its Class-Exclusive widebody fender flare stay burned into
+                    envious eyes.
+                </a>
+            </div>
+            
+            <div class="black_dodge">
+                <picture>
+                    <source class="fourth__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_01.jpg">
+                    <source class="second__carousel__image" media="(min-width: 769px)" srcset="black_dodge.avif">
+                    <img class="fourth__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_01.jpg" alt="">
+                </picture>
+            </div>
+            
+            <div class="fourth__carousel">
+                <div class="fourth__carousel__track-container">
+                    <ul class="fourth__carousel__track">
+                        <li class="fourth__carousel__slide fourth__current-slide">
+                            <picture>
+                                <source class="fourth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_02.jpg.image.1000.jpg">
+                                <source class="fourth__carousel__image" media="(min-width: 769px)" srcset="black_left.avif">
+                                <img class="fourth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_02.jpg.image.1000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">BEST SERVED COLD</h2>
+                            <p>Using the car’s air conditioning system to cool the intake charge, the SRT Power Chiller® drives more oxygen to the engine—increasing its combustion, and its raw power.</p>
+                        </li>
+                        <li class="fourth__carousel__slide">
+                            <picture>
+                                <source class="fourth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_03.jpg.image.1000.jpg">
+                                <source class="fourth__carousel__image" media="(min-width: 769px)" srcset="black_middle.avif">
+                                <img class="fourth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_03.jpg.image.1000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">BROAD SHOULDERS</h2>
+                            <p>Not only do the added 3.5 inches on each fender dominate the horizon, but they also jack up your vehicle’s grip, handling and stability.</p>
+                        </li>
+                        <li class="fourth__carousel__slide">
+                            <picture>
+                                <source class="fourth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_04.jpg.image.1000.jpg">
+                                <source class="fourth__carousel__image" media="(min-width: 769px)" srcset="black_right.avif">
+                                <img class="fourth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_Hellcat_Redeye_Widebody_Mobile_04.jpg.image.1000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">SUPERCHARGED TO PERFECTION</h2>
+                            <p>The Redeye and Super Stock models feature the largest factory supercharger of any mass-produced car, clocking in at 6,500 rpm.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fourth__carousel__nav">
+                <button class="fourth__carousel__indicator fourth__current-slide"></button>
+                <button class="fourth__carousel__indicator"></button>
+                <button class="fourth__carousel__indicator"></button>
+            </div>
+            <!-- black dodge ends -->
+            
+            
+            <!-- orange dodge starts-->
+            <div class="main_description">
+                <a class="CHALLENGER_SRT®_SUPER_STOCK">CHALLENGER SRT® SUPER STOCK</a>
+                <a class="its_hard">
+                    It's hard to argue with 807 horses—and since it has the highest horsepower of any mass-produced car,
+                    no one's going to.
+                </a>
+            </div>
+
+            <div class="orange_dodge">
+                <picture>
+                    <source class="fifth__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_01.jpg">
+                    <source class="fifth__image" media="(min-width: 769px)" srcset="orange_dodge.avif">
+                    <img class="fifth__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_01.jpg" alt="">
+                </picture>
+            </div>
+            
+            <div class="fifth__carousel">
+                <div class="fifth__carousel__track-container">
+                    <ul class="fifth__carousel__track">
+                        <li class="fifth__carousel__slide fifth__current-slide">
+                            <picture>
+                                <source class="fifth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_02.jpg.image.2000.jpg">
+                                <source class="fifth__carousel__image" media="(min-width: 769px)" srcset="orange_tyre.avif">
+                                <img class="fifth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_02.jpg.image.2000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">PROFESSIONALLY FAST</h2>
+                            <p>The Dodge Challenger SRT® Super Stock is able to go from 0 to 60 mph in 3.25 seconds.</p>
+                        </li>
+                        <li class="fifth__carousel__slide">
+                            <picture>
+                                <source class="fifth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_03.jpg.image.2000.jpg">
+                                <source class="fifth__carousel__image" media="(min-width: 769px)" srcset="orange_engine.avif">
+                                <img class="fifth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_03.jpg.image.2000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">UNMATCHED POWER</h2>
+                            <p>With 807 horses blasting out of its Supercharged 6.2L High-Output HEMI® V8, drivers can remain confident knowing they’re behind the most powerful mass-produced V8 engine out there.</p>
+                        </li>
+                        <li class="fifth__carousel__slide">
+                            <picture>
+                                <source class="fifth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_04.jpg.image.1000.jpg">
+                                <source class="fifth__carousel__image" media="(min-width: 769px)" srcset="orange_light.avif">
+                                <img class="fifth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_04.jpg.image.1000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">AIR WORKING OVERTIME</h2>
+                            <p>Breathe deep knowing you’re always receiving performance-level power. The Super Stock comes equipped with a dual snorkel hood, feeding air directly into its high-power supercharger.</p>
+                        </li>
+                        <li class="fifth__carousel__slide">
+                            <picture>
+                                <source class="fifth__carousel__image" media="(max-width: 768px)" srcset="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_05.jpg.image.2000.jpg">
+                                <source class="fifth__carousel__image" media="(min-width: 769px)" srcset="orange_brake.avif">
+                                <img class="fifth__carousel__image" src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/2023/challenger/srt/mobile/MY23_SRThub_Challenger_SuperStock_Mobile_05.jpg.image.2000.jpg" alt="">
+                            </picture>
+                            <h2 class="text">HIGH-PROOF STOPPING POWER</h2>
+                            <p>The lightweight 18x11-inch low-gloss granite wheels and their Nitro NTO5R drag radial tires transfer power to the ground. When the brakes are applied, the aluminum Brembo four-piston brake calipers and 14.2-inch vented rotors help slow things down.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fifth__carousel__nav">
+                <button class="fifth__carousel__indicator fifth__current-slide"></button>
+                <button class="fifth__carousel__indicator"></button>
+                <button class="fifth__carousel__indicator"></button>
+                <button class="fifth__carousel__indicator"></button>
+            </div>
+            <!-- orange dodge ends -->
+            
+            
+            <div class="main_description">
+                <a class="CHALLENGER_SRT®_SUPER_STOCK">BUILT TO DOMINATE</a>
+                <a class="its_hard">
+                    The Dodge SRT® vehicle roster was designed for superior speed, style and performance capability.
+                </a>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer>
+        <nav class="last_navbar">
+            <a>Contact Us</a>
+            <a>Site Map</a>
+            <a>Careers</a>
+            <a><i class="fa-solid fa-earth-asia" id="globe"></i> Find Your Country</a>
+            <div id="search_box">
+                <input type="text" placeholder="Enter Search Terms">
+                <button style="background-color: red;">SEARCH</button>
+            </div>
+        </nav>
+
+        <div class="footer">
+            <div class="my_account">
+                <h4>MY ACCOUNT</h4>
+                <a class="foot_acc" id="dashboard">My Dashboard</a>
+                <a class="foot_acc">My Builds</a>
+                <a class="foot_acc">My Inventory</a>
+                <a class="foot_acc">My Searches</a>
+                <a class="foot_acc">My Garage</a>
+                <a class="foot_acc">My Vehicle Orders</a>
+                <a class="foot_acc">My Profile</a>
+            </div>
+            <div class="service">
+                <h4>SERVICE & MORE</h4>
+                <a class="foot_service" id="warranty">Warranty</a>
+                <a class="foot_service">Mopar® Vehicle Protection</a>
+                <a class="foot_service">Service Coupons</a>
+                <a class="foot_service">Dodge DrivePlus℠ Mastercard®</a>
+                <a class="foot_service">Shop Parts</a>
+            </div>
+            <div class="support">
+                <h4>SUPPORT</h4>
+                <a class="mail">dodge_srt@gmail.com</a>
+            </div>
+            <div class="follow">
+                <h4 id="follow_us">FOLLOW US</h4>
+                <div class="social_media_logos">
+                    <div class="tik_tok"> </div>
+                    <div class="insta"> </div>
+                    <div class="twitter"> </div>
+                    <div class="facebook"> </div>
+                    <div class="youtube"> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="for-hero.js"></script>
+    <script src="first.js"></script>
+    <script src="second.js"></script>
+    <script src="fourth.js"></script>
+    <script src="fifth.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+
+</html>

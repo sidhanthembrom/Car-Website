@@ -1,0 +1,160 @@
+.login{
+    background-color: rgba(255, 255, 255, 0.259);
+}
+
+.background{
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.659)),
+    url("login-bg.avif");
+    height: 810px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box{
+    height: 450px;
+    width: 80%;
+    background-color: black;
+    display: flex;
+}
+
+.form-container{
+    height: 100%;
+    width: 410px;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form > *{
+    color: black;
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+form #email, form #password {
+    width: 100%;
+    height: 2.875rem;
+}
+
+#email::placeholder, #password::placeholder{
+    text-align: start;
+    padding-left: 1rem;
+}
+
+.check{
+    text-align: start;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.check span{
+    color: black;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    top: -1px;
+    /* border: 1px solid black; */
+}
+
+#submit{
+    background-color: red;
+    width: 100%;
+    height: 30px;
+    color: white;
+    text-align: start;
+    padding-left: 1rem;
+}
+
+
+.background-image{
+    background-image: url("login-box.avif");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+}
+
+.textonimage{
+    height: 200px;
+    width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    /* left: 24%; */
+    bottom: 5%;
+    padding: 40px;
+}
+
+.textonimage h1{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px){
+    .inner-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .form-container{
+        width: 100%;
+        height: 100%;
+        padding: 20px 50px;
+    }
+
+    form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .textonimage {
+        bottom: 20%;
+        padding: 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #nav{
+        background-color: rgb(215, 4, 4);
+        color: white;
+    }
+}
+
+@media (max-width: 425px) {
+    .inner-box{
+        height: 100%;
+        width: 100%;
+    }
+
+    .form-container{
+        height: 100%;
+    }
+
+    form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

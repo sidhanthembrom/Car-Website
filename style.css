@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: black;
+}
+.logo{
+    width: 210px;
+    height: 100%;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.background{
+    background-color: black;
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.inner-container{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    line-height: 60px;
+    /* gap: 2em; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-weight: 550;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.find, .shop, .build, .login{
+    height: 100%;
+    line-height: 60px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.inner-container li a{
+    padding: 0 10px;
+    display: block;
+    transition: all 500ms ease;
+    /* height: 100%; */
+}
+
+.build:hover{
+    background-color: red;
+    color: white;
+}
+.na:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.srt{
+    background-image: url("SRT_logo.png.image.500.avif");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 250px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 80px;
+}
+
+figcaption{
+    margin-bottom: 10px;
+}
+.audio{
+    margin-top: 0px;
+    font-family: monospace;
+    font-weight: 550;
+    padding: 50px 20px 0;
+}
+
+.main_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 210px;
+    font-family: monospace;
+}
+
+.CHALLENGER_SRT®_HELLCAT, .CHALLENGER_SRT®_HELLCAT_WIDEBODY, .CHALLENGER_SRT®_HELLCAT_REDEYE, .CHALLENGER_SRT®_HELLCAT_REDEYE_WIDEBODY, .CHALLENGER_SRT®_SUPER_STOCK{
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.CHALLENGER_SRT®_HELLCAT, .As_intimidating, .CHALLENGER_SRT®_HELLCAT_WIDEBODY, .wider_is, .CHALLENGER_SRT®_HELLCAT_REDEYE, .with_its, .CHALLENGER_SRT®_HELLCAT_REDEYE_WIDEBODY, .even_as, .CHALLENGER_SRT®_SUPER_STOCK, .its_hard{
+    animation: move_up 1s ease 0.5s 1 forwards;
+    opacity: 0;
+    animation-timeline: view();
+    animation-range-start: entry;
+    animation-range-end: 500px;
+}
+@keyframes move_up {
+    from{
+        color: black;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        color: white;
+    }
+}
+
+
+                                 /* IMPORTANT */
+                        /* for hero of each car type */
+.white_dodge img, .blue_dodge img, .grey_dodge img, .fourth__image, .fifth__image{
+    width: 100%;
+    height: auto;
+}
+
+                              /* NEW MODIFICATIONS */
+
+/* for main hero video */
+.hide{
+    display: none;
+}
+
+.container-hero{
+    position: relative;
+}
+
+
+/* for big screens */
+@media (min-width: 769px) {
+    .Mobile_Hero_Banner, #mobile-video, #mobile-btn{
+        display: none;
+    }
+    
+    #desktop-video{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .main-wallpaper, .Mobile_Hero_Banner{
+        width: 100%;
+    }
+
+    #desktop-btn{
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(18, 8, 8, 0.656);
+    color: white;
+    }
+
+    /* CAROUSEL */
+    .carousel__nav, .second__carousel__nav, .fourth__carousel__nav, .fifth__carousel__nav{
+        display: none;
+    }
+
+    .carousel, .second__carousel, .fourth__carousel, .fifth__carousel{
+        padding-top: 20px;
+        /* height: 600px; */
+        width: 100%;
+        margin: 0 auto;
+        /* border: 2px solid blue; */
+    }
+
+    .carousel__track-container, .second__carousel__track-container, .fourth__carousel__track-container, .fifth__carousel__track-container{
+        height: 100%;
+        width: 100%;
+        padding: 0 10px;
+        /* border: 2px solid white; */
+    }
+
+    .carousel__track, .second__carousel__track, .fourth__carousel__track, .fifth__carousel__track{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        /* border: 2px solid green; */
+    }
+
+    .carousel__slide, .second__carousel__slide, .fourth__carousel__slide, .fifth__carousel__slide{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-family: monospace;
+        padding: 0 10px 0;
+        /* border: 2px solid red; */
+    }
+
+    .carousel__image, .second__carousel__image, .fourth__carousel__image, .fifth__carousel__image{
+        /* how much the height is needed by the image to be displayed properly */
+        max-height: 90%;    
+        
+        /* height: auto; */
+        width: 100%;      /* of .carousel */
+        object-fit: cover;
+    }
+
+    h2.text{
+        padding: 20px 0;
+        font-size: medium;
+        font-style: bold;
+    }
+    /* carousel end */
+    
+}
+
+
+/* hiding hamburger btn in width > 768px */
+.btn{
+    display: none;
+}
+
+
+/* for header start*/
+header{
+    position: fixed;
+    z-index: 900;
+    top: 0px;
+}
+main{
+    margin-top: 60px;
+}
+/* for header end*/
+
+
+/* for mobile */
+@media(max-width: 768px){
+
+    /* navbar logo */
+    .logo{
+        width: 150px;
+        height: 50px;
+    }
+
+    /* for hamburger */
+    .inner-container{
+        flex-direction: column;
+        margin-right: 0px;
+        gap: 2.5rem;
+
+        background-color: white;
+        
+        position: fixed;
+        inset: 0 0 0 0;
+        padding: 0 1rem;
+
+        /* sliding in to right */
+        transform: translateX(100%);
+
+        /* change in from false to true and vice-versa */
+        transition: all 270ms ease-out;
+    }
+
+    /* using an attribute to slide left*/
+    .inner-container[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .inner-container li a{
+        border: 1px solid red;
+        color: red;
+    }
+
+    .btn{
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        top: 1.1rem;
+        right: 1rem;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        background-image: url("menu-close.png");
+        background-size: contain;
+    }
+    /* hamburger end */
+
+
+    .main-wallpaper, #desktop-video, #desktop-btn{
+        display: none;
+    }
+
+    .Mobile_Hero_Banner{
+        width: 100%;
+    }
+
+    #mobile-video{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        width: 100%;
+    }
+
+    #mobile-btn{
+        cursor: pointer;
+        z-index: 3;
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(18, 8, 8, 0.656);
+        color: white;
+    }
+
+
+/* carousel-start */
+.carousel__nav, .second__carousel__nav, .fourth__carousel__nav, .fifth__carousel__nav{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    gap: 1rem;
+    margin: 10px 0 40px;
+}
+
+.carousel__indicator, .second__carousel__indicator, .fourth__carousel__indicator, 
+.fifth__carousel__indicator{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel, .second__carousel, .fourth__carousel, .fifth__carousel{
+    position: relative;
+
+    height: 700px;
+
+    width: 100%;
+    margin: 50px 0 auto;
+    /* border: 1px solid red; */
+}
+
+.carousel__track-container, .second__carousel__track-container, .fourth__carousel__track-container, 
+.fifth__carousel__track-container{
+    /* background-color: green; */
+    position: relative;
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
+
+    /* overflow: scroll; */
+
+    margin: 0 auto;
+    background-position: center;
+    /* border: 2px solid white; */
+}
+
+.carousel__track, .second__carousel__track, .fourth__carousel__track, .fifth__carousel__track{
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: all 350ms ease-in-out;
+}
+
+.carousel__slide, .second__carousel__slide, .fourth__carousel__slide, .fifth__carousel__slide{
+    /* important feature */
+    height: 100%;
+
+    width: 100%;
+    position: absolute;
+    /* border: 2px solid green; */
+}
+
+.carousel__image, .second__carousel__image, .fourth__carousel__image, .fifth__carousel__image{
+    /* important feature */
+    /* how much the height is needed by the image to be displayed properly of .carousel */
+    /* max-height: 70%;    */
+    
+    height: auto;
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.carousel__indicator, .second__carousel__indicator, .fourth__carousel__indicator, .fifth__carousel__indicator{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.carousel__nav .current-slide, .second__carousel__nav .second__current-slide, .fourth__carousel__nav .fourth__current-slide, 
+.fifth__carousel__nav .fifth__current-slide{
+    background-color: white;
+}
+
+.text{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+}
+
+h2.text{
+    /* height: 30px; */
+    padding: 30px 0 20px;
+    font-size: medium;
+    font-style: bold;
+}
+/* carousel-end */
+
+    .audio{
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .last_navbar{
+        height: 100px;
+    }
+    .last_navbar, .footer{
+        flex-wrap: wrap;
+    }
+    .my_account, .service{
+        width: 180px;
+        margin-bottom: 10px;
+        
+    }
+    .support h4, #follow_us{
+        margin-top: 10px;
+    }
+    .support, .follow{
+        border-top: 1px solid white;
+    }
+}
+
+.last_navbar{
+    background-color: rgb(70, 65, 65);
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: monospace;
+}
+#search_box{
+    border: 0;
+    padding: 0;
+}
+
+#globe{
+    color: white;
+}
+
+.my_account{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+#dashboard{
+    margin-top: 10px;
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+.mail{
+    margin-top: 10px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+#warranty{
+    margin-top: 10px;
+}
+
+#follow_us{
+    margin-bottom: 10px;
+}
+.tik_tok{
+    background-image: url("tiktok-logo-24.png");
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.insta{
+    background-image: url("instagram-logo-24.png");
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+}
+.twitter{
+    background-image: url("twitter-logo-24.png");
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.facebook{
+    background-image: url("facebook-square-logo-24.png");
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.youtube{
+    background-image: url("youtube-logo-24.png");
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+.social_media_logos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer{
+    margin-top: 30px;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#search_box{
+    height: 30px;
+    width: 300px;
+    display: flex;
+}
+
+#search_box input{
+    height: 100%;
+    width: 75%;
+    text-align: start;
+}
+
+#search_box button{
+    height: 100%;
+    width: 25%;
+    font-weight: 600;
+    font-size: 0.6rem;
+}
+
+@media (max-width: 425px) {
+    /* for adjusting space */
+    .carousel, .second__carousel, .fourth__carousel, .fifth__carousel{
+        height: 500px;
+    }
+
+    .Srt-hub{
+        display: none;
+    }
+}
