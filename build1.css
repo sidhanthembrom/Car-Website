@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: white;
+}
+
+.image-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+#container .image-container p {
+  text-align: center;
+  font-size: larger;
+  font-weight: 550;
+}
+
+#container {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#container * {
+  color: black;
+  text-align: left;
+}
+
+.details {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-weight: 530;
+  margin-bottom: 10px;
+}
+
+.ext {
+  font-size: 2.5rem;
+  font-weight: 550;
+  margin-bottom: 50px;
+}
+
+.colorName {
+  margin-bottom: 20px;
+}
+
+.colorChoices {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  height: 75px;
+  padding: 10px 5px 0px;
+}
+
+/* first color */
+.TorRed {
+  position: relative;
+}
+
+.TorRed-color {
+  background-color: red;
+  height: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.TorRed-color:hover {
+  cursor: pointer;
+}
+
+.TorRed span {
+  position: absolute;
+  bottom: 3px;
+  left: 11px;
+}
+
+/* second color */
+.BlackSteel {
+  position: relative;
+}
+
+.BlackSteel-color {
+  background-color: black;
+  height: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.BlackSteel-color:hover {
+  cursor: pointer;
+}
+
+.BlackSteel span {
+  position: absolute;
+  bottom: 3px;
+  left: 11px;
+}
+
+/* white color */
+.PearlWhite {
+  position: relative;
+}
+
+.PearlWhite-color {
+  background-color: whitesmoke;
+  height: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.PearlWhite-color:hover {
+  cursor: pointer;
+}
+
+.PearlWhite span {
+  position: absolute;
+  bottom: 3px;
+  left: 11px;
+}
+/* color ends */
+
+.stripes-container {
+  display: flex;
+  border-radius: 5px;
+}
+
+.active {
+  box-shadow: 0 0 10px;
+}
+
+.stripes-container:hover {
+  cursor: pointer;
+}
+
+.stripes-container img {
+  width: 68px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+
+.stripes-container-text {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.wheels-container img {
+  width: 73px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.wheel-1,
+.wheel-2 {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.wheel-1:hover,
+.wheel-2:hover {
+  cursor: pointer;
+}
+
+.wheel-1-text,
+.wheel-2-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lightgrey {
+  background-color: lightgrey;
+  border-radius: 5px;
+}

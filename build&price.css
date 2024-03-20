@@ -1,108 +1,113 @@
-main{
-    background-color: white;
+main {
+  background-color: white;
 }
 
-.main-title h1{
-    margin-top: 0;
-    padding-top: 60px;
+.main-title h1 {
+  margin-top: 0;
+  padding-top: 60px;
 }
 
-h1, p, .title div, .price div{
-    color: black;
+h1,
+p,
+.title div,
+.price div {
+  color: black;
 }
 
-h1{
-    margin: 48px 0px 15px;
+h1 {
+  margin: 48px 0px 15px;
 }
 
-p{
-    padding: 0 2.5rem;
+p {
+  padding: 0 2.5rem;
 }
 
-.container{
-    display: grid;
-    width: 100%;
-    padding: 3rem 0rem;
-    margin: 0 auto;
+.container {
+  display: grid;
+  width: 100%;
+  padding: 3rem 0rem;
+  margin: 0 auto;
 }
 
-.child-container{
-    width: 70%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    padding: 20px 0;
+.child-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding: 20px 0;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
-.title div{
-    margin: 0px 0px 16px;
-    font-size: 2rem;
-    font-weight: 550;
+.title div {
+  margin: 0px 0px 16px;
+  font-size: 2rem;
+  font-weight: 550;
 }
 
-.price div{
-    font-size: 1.2rem;
+.price div {
+  font-size: 1.2rem;
 }
 
-.text button{
-    margin-top: 1.5rem;
-    background-color: red;
-    padding: 1rem;
+.text button {
+  margin-top: 1.5rem;
+  background-color: red;
+  padding: 1rem;
+}
+button a{
+    text-decoration: none;
 }
 
-@media(300px <= width < 768px){
-    #nav{
-        background-color: rgb(215, 4, 4);
-        color: white;
-    }
+@media (300px <= width < 768px) {
+  #nav {
+    background-color: rgb(215, 4, 4);
+    color: white;
+  }
 }
 
 @media (min-width: 600px) {
-    .container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
 @media (min-width: 768px) {
-    .container{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .Srt-hub--build{  
-        display: block;  
-        height: 1.7rem;
-    }
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Srt-hub--build {
+    display: block;
+    height: 1.7rem;
+  }
 }
 
 @media (min-width: 769px) {
-    .build{
-        background-color: rgba(255, 0, 0, 0.41);
-    }
+  .build {
+    background-color: rgba(255, 0, 0, 0.41);
+  }
 }
 
-@media(768px <= width < 984px){
-    .fourth .title div{
-        height: 90px;
-    }
+@media (768px <= width < 984px) {
+  .fourth .title div {
+    height: 90px;
+  }
 }
 
-@media(984px <= width < 1240px){
-    .fourth .title div{
-        height: 60px;
-    }
+@media (984px <= width < 1240px) {
+  .fourth .title div {
+    height: 60px;
+  }
 }
 
 @media (min-width: 1240px) {
-    .container{
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (min-width: 2560px) {
-    .container{
-        grid-template-columns: repeat(5, 1fr);
-    }
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
