@@ -8,8 +8,15 @@ const netPrice = document.querySelector(".image-container p span");
 const stripesContainer = document.querySelector(".stripes-container");
 
 const colorChoices = document.querySelectorAll(".colorChoices p");
-console.log(colorChoices);
 let currChoice;
+
+let selected = 0; //info about the colors
+let stripesChosen = 0; //info about stripes section
+
+const wheel2 = document.querySelector(".wheel-2");
+const wheel1 = document.querySelector(".wheel-1");
+
+const zoom = document.querySelector(".zoom");
 
 colorChoices.forEach((colorChoice, index) => {
   colorChoice.addEventListener("click", (e) => {
@@ -85,8 +92,6 @@ colorChoices.forEach((colorChoice, index) => {
   });
 });
 
-let selected = 0; //info about the colors
-let stripesChosen = 0; //info about stripes section
 stripesContainer.addEventListener("click", () => {
   currChoice = document.querySelector(".active");
   console.log(currChoice);
@@ -159,6 +164,26 @@ stripesContainer.addEventListener("click", () => {
   }
 });
 
-const wheel2 = document.querySelector(".wheel-2");
-const wheel1 = document.querySelector(".wheel-1");
-// wheel2.addEventListener("click")
+const close = document.querySelector(".close");
+
+// zooming code starts
+let zoomed = 0; //initially not zoomed
+zoom.addEventListener("click", () => {
+  if (zoomed === 0) {
+    image.classList.add("center-zoom");
+    close.classList.remove("hide");
+    close.classList.add("close-button");
+    zoomed = 1;
+  }
+});
+
+close.addEventListener("click", () => {
+  //zoomed = 1 (pic zoomed)
+  if (zoomed === 1) {
+    image.classList.remove("center-zoom");
+    close.classList.add("hide");
+      close.classList.remove("close-button");
+      zoomed = 0;
+  }
+});
+// zooming code ends

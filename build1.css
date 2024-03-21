@@ -11,25 +11,67 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1rem;
+  position: relative;
 }
 
 img {
   width: 100%;
 }
 
-#container .image-container p {
+.image-container img {
+  /* border: 1px solid red; */
+}
+
+.center-zoom {
+  position: fixed;
+  inset: 60px 0 10px 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hide {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  right: -25rem;
+  top: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+.zoom:hover {
+  cursor: pointer;
+}
+
+#ext-container .image-container p {
   text-align: center;
   font-size: larger;
   font-weight: 550;
 }
 
-#container {
-  height: 90vh;
+#ext-container {
+  position: relative;
+  height: calc(100vh - 60px);
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
-#container * {
+#ext-container * {
   color: black;
   text-align: left;
 }
@@ -189,4 +231,9 @@ img {
 .lightgrey {
   background-color: lightgrey;
   border-radius: 5px;
+}
+
+#int-container {
+  background-image: url("interior-bg.jpeg");
+  height: calc(100vh - 60px);
 }
