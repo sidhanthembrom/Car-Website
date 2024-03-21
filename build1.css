@@ -71,7 +71,8 @@ img {
   grid-template-columns: 2fr 1fr;
 }
 
-#ext-container * {
+#ext-container *,
+#int-container * {
   color: black;
   text-align: left;
 }
@@ -236,4 +237,100 @@ img {
 #int-container {
   background-image: url("interior-bg.jpeg");
   height: calc(100vh - 60px);
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.blank-space {
+  background-image: none;
+}
+
+.interior {
+  height: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  right: 20px;
+  top: 45px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.int {
+  height: 65px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.ent.container {
+  display: flex;
+  gap: 26px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+.ent.container img {
+  width: 68px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+
+.ent-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info {
+  height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.contact-info a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #ext-container,
+  #int-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  #image-container img {
+    object-fit: contain;
+    width: 0;
+    height: 0;
+  }
+
+  .zoom {
+    display: none;
+  }
+
+  #int-container {
+    background-image: none;
+    grid-template-columns: 1fr;
+  }
+
+  .blank-space {
+    height: 300px;
+    background-image: url("interior-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .interior {
+    inset: 0 20px 20px 0;
+  }
 }
