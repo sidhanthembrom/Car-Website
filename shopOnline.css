@@ -1,70 +1,75 @@
-.main-navbar{
-    border-bottom: 1px solid rgb(114, 113, 113);
+.main-navbar {
+  border-bottom: 1px solid rgb(114, 113, 113);
 }
 
-.shop{
-    background-color: rgba(255, 255, 255, 0.259);
+.shop {
+  background-color: rgba(255, 255, 255, 0.259);
 }
 
-.container{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    width: 100%;
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
 }
 
-.option{
-    width: 75%;
-    margin: 0 auto;
-    padding: 2rem 0;
-    border-bottom: 0.2px solid rgb(114, 113, 113);
-    border-top: 0.2px solid rgb(114, 113, 113);
+.option {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-bottom: 0.2px solid rgb(114, 113, 113);
+  border-top: 0.2px solid rgb(114, 113, 113);
 }
 
-.option:first-child{
-    border-top: none;
+.option:first-child {
+  border-top: none;
 }
 
-.option--four{
-    border-bottom: none;
+.option--four {
+  border-bottom: none;
 }
 
-.image img{
-    height: 220px;
-    width: auto;
+.image img {
+  height: 220px;
+  width: auto;
 }
 
-.text{
-    display: grid;
-    align-items: center;
+.text {
+  display: grid;
+  align-items: center;
 }
 
-.text p{
-    font-size: larger;
+.text p {
+  font-size: larger;
 }
 
-button{
-    background-color: red;
-    font-size: large;
-    padding: 1rem;
+button {
+  background-color: red;
+  font-size: large;
+}
+button a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1rem;
 }
 
 @media (min-width: 426px) {
-    .option{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
-    #nav{
-        background-color: rgb(215, 4, 4);
-        color: white;
-    }
+  #nav {
+    background-color: rgb(215, 4, 4);
+    color: white;
+  }
 }
 
-@media (max-width: 425px){
-    .option{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
+@media (max-width: 425px) {
+  .option {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
 }
