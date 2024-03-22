@@ -13,22 +13,51 @@ let currChoice;
 let selected = 0; //info about the colors
 let stripesChosen = 0; //info about stripes section
 
-const wheel2 = document.querySelector(".wheel-2");
 const wheel1 = document.querySelector(".wheel-1");
+const wheel2 = document.querySelector(".wheel-2");
 
 const zoom = document.querySelector(".zoom");
+
+const close = document.querySelector(".close");
+
+
+wheel2.addEventListener("click", () => {
+  if (stripesContainer.style.backgroundColor === "lightgrey") {
+    alert("already choosen");
+  } else {
+    alert("Please select the option from Stripes and Decals");
+  }
+});
+
+wheel1.addEventListener("click", () => {
+  if (
+    stripesContainer.style.backgroundColor === "lightgrey" &&
+    wheel2.style.backgroundColor === "lightgrey"
+  ) {
+    alert("Cannot Choose");
+  } else {
+    alert("It is the default");
+  }
+});
+
 
 colorChoices.forEach((colorChoice, index) => {
   colorChoice.addEventListener("click", (e) => {
     //always checks for "active class" after the event occurs
     currChoice = document.querySelector(".active");
     if (e.target.getAttribute("class") === "TorRed-color") {
-      if (selected === 1 && stripesChosen === 1) {
+      if (
+        (selected === 1 && stripesChosen === 1) ||
+        (selected === 5 && stripesChosen === 0) ||
+        (selected === 5 && stripesChosen === 1) ||
+        (selected === 6 && stripesChosen === 1)
+      ) {
         currChoice.classList.remove("active");
         TorRedColor.classList.add("active");
         image.setAttribute("src", "build1-red-stripes.jpeg");
         colorName.innerText = "Tor Red";
         selected = 1;
+        stripesChosen = 1;
       } else if (selected === 1 && stripesChosen === 0) {
         currChoice.classList.remove("active");
         TorRedColor.classList.add("active");
@@ -36,8 +65,6 @@ colorChoices.forEach((colorChoice, index) => {
         colorName.innerText = "Tor Red";
         selected = 1;
       } else {
-        console.log(e.target, index);
-        console.log(currChoice);
         currChoice.classList.remove("active");
         TorRedColor.classList.add("active");
         image.setAttribute("src", "build1-red.jpeg");
@@ -45,12 +72,18 @@ colorChoices.forEach((colorChoice, index) => {
         selected = 0; //for red
       }
     } else if (e.target.getAttribute("class") === "BlackSteel-color") {
-      if (selected === 1 && stripesChosen === 1) {
+      if (
+        (selected === 1 && stripesChosen === 1) ||
+        (selected === 6 && stripesChosen === 0) ||
+        (selected === 6 && stripesChosen === 1) ||
+        selected === 6
+      ) {
         currChoice.classList.remove("active");
         BlackSteelColor.classList.add("active");
         image.setAttribute("src", "build1-black-stripes.jpeg");
         colorName.innerText = "Black Steel";
         selected = 5;
+        stripesChosen = 1;
       } else if (selected === 1 && stripesChosen === 0) {
         currChoice.classList.remove("active");
         BlackSteelColor.classList.add("active");
@@ -58,8 +91,6 @@ colorChoices.forEach((colorChoice, index) => {
         colorName.innerText = "Black Steel";
         selected = 5;
       } else {
-        console.log(e.target, index);
-        console.log(currChoice);
         currChoice.classList.remove("active");
         BlackSteelColor.classList.add("active");
         image.setAttribute("src", "build1-black.jpeg");
@@ -67,7 +98,10 @@ colorChoices.forEach((colorChoice, index) => {
         selected = 3; //for black
       }
     } else if (e.target.getAttribute("class") === "PearlWhite-color") {
-      if (selected === 1 && stripesChosen === 1) {
+      if (
+        (selected === 1 && stripesChosen === 1) ||
+        (selected === 5 && stripesChosen === 1)
+      ) {
         currChoice.classList.remove("active");
         PearlWhiteColor.classList.add("active");
         image.setAttribute("src", "build1-white-stripes.jpeg");
@@ -80,8 +114,6 @@ colorChoices.forEach((colorChoice, index) => {
         colorName.innerText = "Pearl White";
         selected = 6;
       } else {
-        console.log(e.target, index);
-        console.log(currChoice);
         currChoice.classList.remove("active");
         PearlWhiteColor.classList.add("active");
         image.setAttribute("src", "build1-white.jpeg");
@@ -94,7 +126,7 @@ colorChoices.forEach((colorChoice, index) => {
 
 stripesContainer.addEventListener("click", () => {
   currChoice = document.querySelector(".active");
-  console.log(currChoice);
+  //   console.log(currChoice);
   if (selected === 0) {
     //   iff stripes tab is clicked first this activates the default selection that is red + stripes
     stripesContainer.style.backgroundColor = "lightgrey";
@@ -107,15 +139,9 @@ stripesContainer.addEventListener("click", () => {
     selected = 1;
     stripesChosen = 1;
   }
-  //starts working only iff the car color is selected first
   // 2 -> for red
   // 3 -> for black
   // 4 -> for white
-  //   else if (selected === 2) {
-  //     netPrice.innerText = "29,760";
-  //     image.setAttribute("src", "build1-red-stripes.jpeg");
-  //     stripesContainer.style.backgroundColor = "lightgrey";
-  //   }
   else if (selected === 3) {
     netPrice.innerText = "29,760";
     image.setAttribute("src", "build1-black-stripes.jpeg");
@@ -164,7 +190,6 @@ stripesContainer.addEventListener("click", () => {
   }
 });
 
-const close = document.querySelector(".close");
 
 // zooming code starts
 let zoomed = 0; //initially not zoomed
@@ -182,8 +207,8 @@ close.addEventListener("click", () => {
   if (zoomed === 1) {
     image.classList.remove("center-zoom");
     close.classList.add("hide");
-      close.classList.remove("close-button");
-      zoomed = 0;
+    close.classList.remove("close-button");
+    zoomed = 0;
   }
 });
 // zooming code ends
