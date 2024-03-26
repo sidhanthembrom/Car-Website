@@ -9,7 +9,7 @@ let stopDesktopVideo = () => {
   desktopVideo.classList.add("hide");
 };
 
-//stop after 6.3s since there is an autplay in the <video>
+//stop after 6.3s since there is an autoplay in the <video>
 setTimeout(stopDesktopVideo, 6300);
 
 //play button on the top right
